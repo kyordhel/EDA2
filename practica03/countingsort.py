@@ -23,6 +23,7 @@ def countingSort(A, k):
 	for i in range(len(A)-1, -1, -1):
 		output[count[A[i]]-1] = A[i]
 		count[A[i]]-=1
+	return output
 
 def main():
 	A=[	8, 7, 3, 6, 9, 8, 5, 8, 4, 6,
@@ -31,7 +32,7 @@ def main():
 		9, 5, 7, 6, 5, 6, 7, 8, 9, 9,
 		6, 2, 4, 9
 	]
-	countingSort(A,9)
+	A = countingSort(A,9)
 	print(A)
 
 
