@@ -1,0 +1,7 @@
+a = b, c, d
+b = a, b, c
+c = a, d
+d = c
+e = e, f, g
+f = e, f, g
+g = e, f, g
